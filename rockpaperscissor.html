@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    
+    <style>
+          body{
+            background-color: black;
+            color:aqua;
+            text-align: center;
+            
+          }
+          h1{
+            margin-top:20px;
+          }
+          .cool{
+            margin-top: 40px;
+
+          }
+          button{
+            width:160px;
+            height:160px;
+            margin:20px;
+            font-size: 40px;
+            background-color: black;
+            color:aqua;
+            border:2px solid gold;
+            border-radius: 10px;
+            cursor:pointer;
+            transition: 0.2s;
+
+          }
+          button:hover{
+            background-color: aqua;
+            color:black;
+            transform: scale(1.1);
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<h1>Rock Paper Scissors</h1>
+<div class="cool"></div>
+<button onclick="
+const num=Math.random();
+let computer='';
+
+if(num>=0 && num<=1/3){
+ computer='rock';
+         }
+else if(num>=1/3 && num<2/3){
+computer='paper';}
+else if(num>=2/3 && num<1){
+ computer='scissors';}
+ console.log(computer);
+ let result='';
+if(computer==='rock'){
+result='tie';
+   }
+else if(computer==='paper'){
+result='lose';}
+else if(computer==='scissors'){
+result='win';}
+alert(result);
+
+">rock</button>
+
+
+<button onclick="const num1=Math.random();
+let computer1='';
+if(num1>=0 && num1<=1/3){
+computer1='rock';}
+else if(num1>=1/3 && num1<2/3){
+computer1='paper';}
+else if(num1>=2/3 && num1<1){
+computer1='scissors';}
+console.log(computer1);
+let result1='';
+if(computer1==='paper'){
+result1='tie';}
+else if(computer1==='rock'){
+result1='win';}
+else if(computer1==='scissors'){
+result1='lose';}
+alert(result1);
+ ">paper</button>
+
+
+<button onclick="const num2=Math.random();
+let computer2='';
+if(num2>=0 && num2<=1/3){
+computer2='rock';}
+else if(num2>=1/3 && num2<2/3){
+computer2='paper';}
+else if(num2>=2/3 && num2<1){
+computer2='scissors';}
+console.log(computer2);
+let result2='';
+if(computer2==='scissors'){
+result2='tie';}
+else if(computer2==='rock'){
+result2='lose';}
+else if(computer2==='paper'){
+result2='win';}
+alert(result2);
+
+
+">scissors</button>
+</div>
+</body>
+    
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
